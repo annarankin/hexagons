@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Canvas fun!</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+  <style type="text/css">
+    body {
+      text-align: center;
+    }
+    canvas {
+      border: 1px solid black;
+    }
+    .controls {
+      margin: 0 auto;
+      max-width: 80%;
+    }
+    .controls input {
+      text-align: center;
+      font-size: 24px;
+    }
+    #hexies {
+      margin: 1em;
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="container">
+    <div class="row">
+      
+      <div class="hex-stuff eight columns">
+        <canvas id="hexies" width="600" height="600">
+          <h1>This is fallback content! Only displayed if browser dunt support canvas.</h1>
+          <p>If you see this, you should update your browzah.</p>
+        </canvas>
+      
+      </div>
+      <div class="four columns">
+        <div class="controls">
+          
+          <h1>Fun with Hexagons!</h1>
+          <form id="dat-form">
+            <label for="hex-size"> Hex Size:
+              <input class="u-full-width" id="hex-size" type="number" value="100">
+            </label>
+            <label for="height"> Max Vertical Hexes:
+              <input class="u-full-width" id="height" type="number" value="6">
+            </label>
+            <label for="width"> Max Horizontal Hexes:
+              <input class="u-full-width" id="width" type="number" value="3">
+            </label>
+            <label for="top"> Top Offset:
+              <input class="u-full-width" id="top" type="number" value="75">
+            </label>
+            <label for="left"> Left Offset:
+              <input class="u-full-width" id="left" type="number" value="75">
+            </label>
+            <input class="button-primary" id="reset-btn" type="submit" value="reset">
+          </form>  
+        
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+  <!-- <script src="./canvas.js"></script> -->
+  <script src="./canvas.js"></script>
+
+</body>
+</html>
